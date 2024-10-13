@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TecConnect</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/newicon.png" rel="icon">
+  <link href="assets/img/newicon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--HOMEPAGE-->
+  <div class='main'>
+    <div class='header'>
+        <header>
+            <h1 class="heading">EcoEats<h1>
+            <nav class="navigation">
+              <ul>
+                <li class="active"><a href="#header">Home</a></li>
+                <li><a href="#Maps">The Map</a></li>
+                <li><a href="#Report">Submit a Report</a></li>
+                <li><a href="#services">Your Pairing</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!--HOMEPAGE JUMBOTRON-->
+    <div class='jumbotron'>
+        <h2 class="h2">Solving Food Waste<br>One Meal <img src="data:image/png;base64,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"
+            width="60" height="60" alt="star image on homepage" class="hero-image"><span> at a Time</span></br></span></h2>
+    </div>
+    <a href="#Maps" class="button"><b>Get Started!</b></a></li> <!-- Modified Sign In/log in link -->
+
+    <!--HOMPAGE 3 SECTIONS-->
+    <div class="mini-sections-container">
+        <div class="mini-section">
+            <img src="data:image /png;base64,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" 
+             alt="red image" class="icon-image">
+            <h3><b>A Surplus of Food</b></h3>
+            <p class="description">Many restaurants end the day with surplus food that often goes to waste, while countless individuals and charities struggle with food insecurity. Our platform helps address this imbalance.</p>
+        </div>
+
+        <div class="mini-section">
+            <img src="data:image/png;base64,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" alt="green image" c
+             atl = "green image" class="icon-image">
+            <h3><b>Our Solution</b></h3>
+            <p class="description">Restaurants are willing to donate surplus food, but they often lack an efficient way to connect with charities. EcoEats provides that solution by facilitating food donations and pickups through an easy-to-use platform.</p>
+        </div>
+        
+        <div class="mini-section">
+            <img src="data:image/png;base64,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" 
+             alt="yellow image" class="icon-image">
+            <h3><b>Personal Paring</b></h3>
+            <p class="description">Once a restaurant and a charity are matched, we generate a personalized plan to coordinate the donation and safe transfer of food, ensuring timely pickups and compliance with local food safety guidelines.</p>
+        </div>
+    </div>
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Our Features and Process</h2>
+          <p data-aos="fade-in">A brief outline and description our of features, process, and solutions.</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5" data-aos="fade-right">
+            <img src="assets/img/features.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-4" data-aos="fade-left">
+            <h3>How Restaurants and Charities Connect for Food Donations</h3>
+            <p class="font-italic">
+            Our platform allows restaurants to donate surplus food and charities to request donations. Once either party submits their information, it is stored in the database, which our geolocation-based algorithm constantly searches through to make effective pairings by leveraging Google Maps API.
+            </p>
+            <ul>
+              <li><i class="icofont-check"></i> Forms for both donating restaurants and requesting charities are paired based on location and food availability using Google Maps for efficient logistics.</li>
+              <li><i class="icofont-check"></i> Real-time pairing algorithm continuously searches for the best matches, ensuring fast and effective connections between restaurants and charities.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+            <img src="assets/img/mapcartoon.jpg" width="500" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+            <h3>Once a Restaurant and Charity are Paired</h3>
+            <p class="font-italic">
+            </p>
+            <p> A personalized plan is developed, detailing: The quantity of food to be donated, when the transfer will take place,
+              how the food will be transported, any guidelines or best practices for food safety, both the restaurant and charity will be prompted to share contact details, ensuring the donation is facilitated as quickly and efficiently as possible.
+            </p>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5" data-aos="fade-right">
+            <img src="assets/img/cloud.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5" data-aos="fade-left">
+            <h3>EcoEats is the ultimate solution for tackling food waste and hunger</h3>
+            <ul>
+              <li><i class="icofont-check"></i> Automated and efficient matching between restaurants and charities.</li>
+              <li><i class="icofont-check"></i> Data stored securely in the cloud, ensuring easy access and coordination.</li>
+              <li><i class="icofont-check"></i> Personalized donation plans to ensure the safe and timely transfer of food.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Maps Section ======= -->
+
+    <section id="Maps" class="Maps section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">The Map</h2>
+          <p data-aos="fade-in">Below is a map of our participating restaurants and charities, with a marker set for each location.
+            Green markers represent restaurants offering surplus food, while orange markers represent charities in need of donations. Click on a marker to learn more about the restaurant or charity.</p>
+        </div>
+
+        <style>
+          /* Set the size of the div element that contains the map */
+          #map {
+            height: 1000px;  /* The height is 400 pixels */
+            width: 100%;  /* The width is the width of the web page */
+           }
+        </style>
+      </head>
+      <body>
+        <!--The div element for the map -->
+        <div id="map"></div>
+        <script src="jsFilesAndAPIs/googleMaps.js"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjWfWoYtAhvc6i9C4V5SekngUKeyXOYoc&callback=initMap">
+        </script>
+
+        </div>
+
+
+    </section><!-- End Maps Section -->
+
+    <!-- ======= Reports Section ======= -->
+
+    <section id="Report" class="Reports section-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="section-title">
+              <h2 data-aos="fade-in">Submit a Report</h2>
+              <p data-aos="fade-in">Fill out a form with your restaurant's general information and available food items.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div id="errormessage"></div>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        </head>
+        <body>
+<center>
+  <span id="tabBackground"></span>
+  <div id="colorstrip"/>
+
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Restaurant Donor</button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')">Charity Recipient</button>
+        </div>
+      </center>
+
+<p></p>
+      <center>
+  <label>Please upload a profile image of your restaurant / charity</label>
+  </center>
+
+  <center>
+  <label for="file-upload" class="custom-file-upload">
+    <i class="fa fa-cloud-upload"></i> Custom Upload
+</label>
+<input id="file-upload" type="file"/>
+</center>
+
+  <center>
+
+        <p class="null"></p>
+              <div id="London" class="tabcontent">
+                <center>
+                <form id="markerForm" method="post" role="form" class="contactForm">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        id="address"
+                        placeholder="Restaurant Name"
+                        data-rule-minlength="4"
+                        data-msg-minlength="Please enter a valid address"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        id="address"
+                        placeholder="Restaurant Email"
+                        data-rule-minlength="4"
+                        data-msg-minlength="Please enter a valid address"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        id="address"
+                        placeholder="Restaurant Address"
+                        data-rule-minlength="4"
+                        data-msg-minlength="Please enter a valid address"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        id="address"
+                        placeholder="Available Food Type"
+                        data-rule-minlength="4"
+                        data-msg-minlength="Please enter a valid address"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        id="address"
+                        placeholder="Food Expiration Date"
+                        data-rule-minlength="4"
+                        data-msg-minlength="Please enter a valid address"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        id="address"
+                        placeholder="Preferred Drop Dates"
+                        data-rule-minlength="4"
+                        data-msg-minlength="Please enter a valid address"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Additional Message"
+                        data-rule-required="true"
+                        data-msg-required="Please enter a message"
+                      ></textarea>
+                      <div class="validation"></div>
+                    </div>
+
+                    <script>
+                      function testSubmitFunction() {
+                        document.getElementById("hometown").style.display = "block";
+                      }
+                    </script>
+
+
+                    <button class="formSubmitButton" type="button" onClick="testSubmitFunction()">Submit</button>
+
+
+                  </div>
+                </form>
+
+      <p></p>
+
+                <div id="hometown" style="display: none">
+                    <p class="hometown">Thank you for submitting your report! You should receive an email notification when our system has found a match.</p>
+                </div>
+              </center>
+              </div>
+
+      <p></p>
+                <p class="null"></p>
+              </div>
+
+              <div id="Paris" class="tabcontent">
+                <center>
+                <form id="markerForm" method="post" role="form" class="contactForm">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        id="address"
+                        placeholder="Charity Name"
+                        data-rule-minlength="4"
+                        data-msg-minlength="Please enter a valid address"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        id="address"
+                        placeholder="Charity Email"
+                        data-rule-minlength="4"
+                        data-msg-minlength="Please enter a valid address"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        id="address"
+                        placeholder="Charity Address"
+                        data-rule-minlength="4"
+                        data-msg-minlength="Please enter a valid address"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        id="address"
+                        placeholder="Food Needed"
+                        data-rule-minlength="4"
+                        data-msg-minlength="Please enter a valid address"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        id="address"
+                        placeholder="Preferred Food Expiration Date"
+                        data-rule-minlength="4"
+                        data-msg-minlength="Please enter a valid address"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        id="address"
+                        placeholder="Preferred Pickup Dates"
+                        data-rule-minlength="4"
+                        data-msg-minlength="Please enter a valid address"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Additional Message"
+                        data-rule-required="true"
+                        data-msg-required="Please enter a message"
+                      ></textarea>
+                      <div class="validation"></div>
+                    </div>
+
+      <script>
+        function testSubmitFunctionTwo() {
+          document.getElementById("hometownTwo").style.display = "block";
+        }
+      </script>
+                    <button class="formSubmitButton" type="button" onClick="initMapTwo();testSubmitFunctionTwo()">Submit</button>
+                  </div>
+                </form>
+        <p class="null"></p>
+      <div id="hometownTwo" style="display: none">
+          <p class="hometown">Thank you for submitting your report! You should receive an email notification when our system has found a match.</p>
+      </div>
+                </center>
+              </div>
+
+        <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+        </script>
+
+        </body>
+      </div>
+    </section><!-- End Maps Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Your Pairing</h2>
+          <p data-aos="fade-in">This is your interface which displays the ideal pairing and the plan that has been developed based on each school's needs.</p>
+          <p data-aos="fade-in">Please note the following cards are just an example of how pairings look, once you submit a report and get a personalized link, it will be updated.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <img div style="width: 600px; height: 338px; overflow: hidden" src="assets/img/gilroypic.jpeg" alt="...">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title"><a href="">Your Information:</a></h3>
+                <h5 class="card-title"><a href="">Gilroy High School</a></h5>
+                <p class="card-text"><b>School Email:</b> vishraj55@gmail.com</p>
+                <p class="card-text"><b>School Address:</b> 750 W 10th St, Gilroy, CA</p>
+                <p class="card-text"><b>Devices Type Available:</b> Chromebooks</p>
+                <p class="card-text"><b>Number of Devices Needed:</b> 1000</p>
+              </div>
+            </div>
+          </div>
+
+
+                    <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+                      <div class="card">
+                        <div style="width: 600px; height: 338px; overflow: hidden" class="card-img">
+                          <img src="assets/img/saratogahigh.jpg" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title"><a href="">Your Match:</a></h3>
+                          <h5 class="card-title"><a href="">Saratoga High School</a></h5>
+                          <p class="card-text"><b>School Email:</b> ayaanzhaque@gmail.com</p>
+                          <p class="card-text"><b>School Address:</b> 20300 Herriman Ave, Saratoga, CA</p>
+                          <p class="card-text"><b>Devices Type Available:</b> Chromebooks</p>
+                          <p class="card-text"><b>Devices Available:</b> 2600</p>
+                          <hr>
+                          <h5 class="card-title"><a href="">Recommendation</a></h5>
+                          <p class="card-text"><b>Number of Devices to Share:</b> 800</p>
+                          <p class="card-text"><b>Type of Shared Device:</b> Chromebooks</p>
+                          <p class="card-text"><b>Distance Between Schools:</b> 40.1 miles</p>
+                          <p class="card-text"><b>Recommended Plan:</b></p>
+                            <p class="card-text">-Schools should contact each other ASAP to begin the transfer</p>
+                            <p class="card-text">-Both schools should have volunteers ready to pick up devices</p>
+                            <p class="card-text"><b>Recommended Date:</b> June 5th, 2020 -- June 10th, 2020</p
+                              <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i>Confirm Pairing to Begin</a></div>
+                        </div>
+                      </div>
+
+                </div>
+
+    </section><!-- End Services Section -->
+
+    <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact section-bg">
+        <div class="container">
+
+          <div class="section-title">
+            <h2 data-aos="fade-in">Contact</h2>
+            <p data-aos="fade-in">Contact us with any further questions and concerns!</p>
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-6">
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                    <i class="bx bx-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>shree.sasik@gmail.com</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-lg-6">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-aos="fade-up">
+                <div class="form-row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validate"></div>
+                </div>
+                <div class="mb-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- End Contact Section -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="jsFilesAndAPIs/firebase.js"></script>
+  <script src="https://js.radar.io/v3.0.0-beta.4/radar.min.js" integrity="sha384-NLSzGc8WqjQHUlTze1Rp8e+5cjI0KJ8wyU9W+ClJj/ceW8ZFyyX26axTM2pSKyU0" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
