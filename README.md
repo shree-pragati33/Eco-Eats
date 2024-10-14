@@ -20,14 +20,7 @@ The app aims to bridge the gap between privileged restaurants that have excess f
 
 ## Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Node.js (if applicable)
-- **Database**: MongoDB (if applicable)
+- **Backend**: Node.js
+- **Database**: MongoDB
 - **APIs**: Google Maps API, Web Notifications API
 
-## Getting Started
-To run EcoEats locally, follow these steps:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/ecoeats.git
-   cd ecoeats
